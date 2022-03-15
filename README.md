@@ -6,9 +6,30 @@ Anggota :
 4. Iqbal Manazil Yuni - 201152
 5. Muhammad Reza Rizki Rahmadi - 2011523015
 
-# Buatlah sebuah aplikasi untuk mengelola Rencana Pembelajaran Semester (RPS). Codename untuk project ini adalah “LOKI”. Secara umum aplikasi ini digunakan untuk membuat, mengubah, mengubah dan menghapus RPS yang ada di Jurusan. Selain itu sistem ini mampu menampilkan laporan terkait kondisi kurikulum Jurusan. Ada 3 aktor yang menggunakan sistem ini yaitu admin, dosen dan mahasiswa.
+Buatlah sebuah aplikasi untuk mengelola Rencana Pembelajaran Semester (RPS). Codename untuk project ini adalah “LOKI”. Secara umum aplikasi ini digunakan untuk membuat, mengubah, mengubah dan menghapus RPS yang ada di Jurusan. Selain itu sistem ini mampu menampilkan laporan terkait kondisi kurikulum Jurusan. Ada 3 aktor yang menggunakan sistem ini yaitu admin, dosen dan mahasiswa.
 
 Berikut kebutuhan fungsional sistem yang akan dibangun
+
+
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Berikut kebutuhan fungsional sistem yang akan dibangun</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a> MySQL - ExpressJS</li>
+      </ul>
+    </li>
+    <li><a href="#usage">Mampu memahami struktur database dan scope project</a></li>
+    <li><a href="#roadmap">Mampu membuat web server dan merespon request pengguna dengan menggunakan ExpressJS</a></li>
+    <li><a href="#contributing">Mampu mendesain RestFul API dan struktur data JSON yang digunakan untuk aplikasi</a></li>
+    <li><a href="#license">Aplikasi sudah terkoneksi ke database</a></li>
+    <li><a href="#contact">Aplikasi memiliki fitur login dan logou</a></li>
+    <li><a href="#acknowledgments">Aplikasi telah mengimplementasikan seluruh API</a></li>
+  </ol>
+</details>
+
 
 1. Pengguna (dosen/admin) dapat login ke dalam system
 
