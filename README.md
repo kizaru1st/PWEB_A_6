@@ -16,17 +16,17 @@ Berikut kebutuhan fungsional sistem yang akan dibangun
   <summary>Berikut kebutuhan fungsional sistem yang akan dibangun</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
+      <a href="#">About The Project</a>
       <ul>
-        <li><a href="#built-with">Built With</a> MySQL - ExpressJS</li>
+        <li>Built With MySQL - ExpressJS</li>
       </ul>
     </li>
-    <li><a href="#usage">Mampu memahami struktur database dan scope project</a></li>
-    <li><a href="#roadmap">Mampu membuat web server dan merespon request pengguna dengan menggunakan ExpressJS</a></li>
-    <li><a href="#contributing">Mampu mendesain RestFul API dan struktur data JSON yang digunakan untuk aplikasi</a></li>
-    <li><a href="#license">Aplikasi sudah terkoneksi ke database</a></li>
-    <li><a href="#contact">Aplikasi memiliki fitur login dan logou</a></li>
-    <li><a href="#acknowledgments">Aplikasi telah mengimplementasikan seluruh API</a></li>
+    <li><a href="#">Mampu memahami struktur database dan scope project</a></li>
+    <li><a href="#">Mampu membuat web server dan merespon request pengguna dengan menggunakan ExpressJS</a></li>
+    <li><a href="#">Mampu mendesain RestFul API dan struktur data JSON yang digunakan untuk aplikasi</a></li>
+    <li><a href="#">Aplikasi sudah terkoneksi ke database</a></li>
+    <li><a href="#">Aplikasi memiliki fitur login dan logou</a></li>
+    <li><a href="#">Aplikasi telah mengimplementasikan seluruh API</a></li>
   </ol>
 </details>
 
