@@ -7,5 +7,11 @@ app.listen(5000, () => {
 
 app.get('/', (req, res) => {
     res.send("Hello World");
+});
+
+app.put('/users/:id',(req, res) => {
+    const ID =req.params
+    res.send(ID);
 })
+
 
