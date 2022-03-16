@@ -2,8 +2,8 @@
 Anggota : 
 1. Aini Izzathy Ispendi - 2011522025
 2. Fadila Tri Afriani - 2011521011
-3. Iqbal Fitrahul Ramadhan - 201152
-4. Iqbal Manazil Yuni - 201152
+3. Iqbal Fitrahul Ramadhan - 2011521017
+4. Iqbal Manazil Yuni - 2011522007
 5. Muhammad Reza Rizki Rahmadi - 2011523015
 
 Buatlah sebuah aplikasi untuk mengelola Rencana Pembelajaran Semester (RPS). Codename untuk project ini adalah “LOKI”. Secara umum aplikasi ini digunakan untuk membuat, mengubah, mengubah dan menghapus RPS yang ada di Jurusan. Selain itu sistem ini mampu menampilkan laporan terkait kondisi kurikulum Jurusan. Ada 3 aktor yang menggunakan sistem ini yaitu admin, dosen dan mahasiswa.
