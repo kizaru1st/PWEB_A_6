@@ -8,3 +8,9 @@ app.listen(5000, () => {
 app.get('/', (req, res) => {
     res.send("Hello World");
 })
+
+
+app.delete('/users/:idAnda', (req, res) => {
+   const ID = req.params.idAnda
+   res.send(ID);
+});
