@@ -8,3 +8,8 @@ app.listen(5000, () => {
 app.get('/', (req, res) => {
     res.send("Hello World");
 })
+
+app.post('/users', (req, res)=>
+{
+    res.send('Post user');
+})
