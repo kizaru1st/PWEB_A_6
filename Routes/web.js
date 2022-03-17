@@ -10,6 +10,6 @@ app.use(adminRouter);
 
 app.route('/')
     .get((req, res) => {
-        res.send("Ini adalah halaman home");
+        res.send("Halaman Home");
     })
     // Tambah 3 Method HTTP (Post, Put, Delete)

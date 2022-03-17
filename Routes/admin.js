@@ -1,7 +1,7 @@
 const express = require('./node_modules/express');
-const router = express.Router();
+const routing = express.Router();
 
-router.route('/admin/:idAdmin')
+routing.route('/admin/:idAdmin')
     .get((req, res) => {
         const ID = req.params.idAdmin;
         res.send(`ID Admin sekarang: ${ID}`);
@@ -10,4 +10,4 @@ router.route('/admin/:idAdmin')
 
 
 // Export into main file (web.js) 
-module.exports = router;
+module.exports = routing;
