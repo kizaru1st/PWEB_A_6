@@ -5,6 +5,10 @@ app.listen(5000, () => {
     console.log("Server is running");
 });
 
+app.get('/test', (req, res) => {
+    res.send("TEST");
+});
+
 // 4 Method HTTP
 
 app.get('/', (req, res) => {
