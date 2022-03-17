@@ -1,20 +1,15 @@
 const express = require('../node_modules/express');
+const adminRouter = require('./admin')
 const app = express();
 
 app.listen(5000, () => {
     console.log("Server is running");
 });
 
-app.get('/test', (req, res) => {
-    res.send("TEST");
-});
+app.use(adminRouter);
 
-// 4 Method HTTP
-
-app.get('/', (req, res) => {
-    res.send("Hello World");
-});
-
-app.post('/users', (req, res)=> {
-    res.send('Post user');
-});
+app.route('/')
+    .get((req, res) => {
+        res.send("Ini adalah halaman home");
+    })
+    // Tambah 3 Method HTTP (Post, Put, Delete)
