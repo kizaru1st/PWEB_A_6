@@ -7,5 +7,9 @@ routing.get('/admin/:id', (req, res) => {
     res.send(`Get Admin id: ${ID}`);
 });
 
+routing.post('/admin', (req, res) => {
+    res.send("Post berhasil");
+})
+
 
 module.exports = routing;

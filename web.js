@@ -14,4 +14,7 @@ app.route('/person/:id')
         const ID = req.params.id;
         res.send(`Person Page ${ID}`);
     })
+    .post((req, res) => {
+        console.log("Method put is running");
+    })
 
