@@ -11,5 +11,10 @@ routing.post('/admin', (req, res) => {
     res.send("Post berhasil");
 })
 
+routing.delete('/admin/:id', (req, res) => {
+    const ID = req.params.id;
+    res.send(`Delete Admin id: ${ID}`);
+})
+
 
 module.exports = routing;

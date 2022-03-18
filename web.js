@@ -17,4 +17,8 @@ app.route('/person/:id')
     .post((req, res) => {
         console.log("Method put is running");
     })
+    .delete((req, res) => {
+        const IDperson = req.params.id;
+        res.send(IDperson);
+    })
 
