@@ -16,5 +16,9 @@ routing.delete('/admin/:id', (req, res) => {
     res.send(`Delete Admin id: ${ID}`);
 })
 
+routing.put('/admin/:id', (req, res) => {
+    const IDperson = req.params.id;
+    res.send(`This id has been sent, value: ${IDperson}`);
+})
 
 module.exports = routing;

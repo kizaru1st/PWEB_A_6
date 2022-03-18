@@ -21,4 +21,8 @@ app.route('/person/:id')
         const IDperson = req.params.id;
         res.send(IDperson);
     })
+    .put((req, res) =>{
+        const IDperson = req.params.id;
+        res.send(`This id has been sent, value: ${IDperson}`);
+    })
 
