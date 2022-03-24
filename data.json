@@ -6,6 +6,12 @@
             "nim"  : "2011529999",
             "tanggal_lahir" : "2002-01-01",
             "alamat" : "Padang"
+        },
+        {
+            "nama" : "Tika",
+            "nim"  : "2011527865",
+            "tanggal_lahir" : "2003-03-11",
+            "alamat" : "Padang"
         }
     ],
     "Dosen" : 
@@ -15,6 +21,12 @@
             "nrp" : 196404091995121001,
             "tanggal_lahir" : "1964-04-09",
             "alamat" :"Padang"
+        },
+        {
+            "nama" : "Fauzan",
+            "nrp" : 196408430390376839,
+            "tanggal_lahir" : "1962-02-09",
+            "alamat" :"Payakumbuh"
         }
     ],
     "Mata Kuliah" : 
@@ -24,6 +36,12 @@
             "kode" : "SDA001",
             "sks" : 3,
             "detail" : "perancangan dan pemilihan struktur data yang sesuai implementasi, dan analisis secara umum pada algoritme yang dibuat"
+        },
+        {
+            "nama" : "Sistem Informasi Geografis",
+            "kode" : "GIS005",
+            "sks" : 2,
+            "detail" : "mempermudah mendapatkan informasi yang telah diolah dan tersimpan sebagai atribut suatu lokasi atau obyek"
         }
     ]
 }
