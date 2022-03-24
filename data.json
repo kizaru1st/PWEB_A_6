@@ -18,6 +18,12 @@
             "nim"  : "2011522025",
             "tanggal_lahir" : "2002-09-08",
             "alamat" : "Bukittinggi"
+        },
+        {
+            "nama" : "Fr",
+            "nim"  : "2011521017",
+            "tanggal_lahir" : "2001-11-30",
+            "alamat" : "Lubuk Basung" 
         }
     ],
     "Dosen" : 
@@ -39,6 +45,12 @@
             "nrp" : 1964084303903789389,
             "tanggal_lahir" : "1962-03-02",
             "alamat" :"Solok"
+        },
+        {
+            "nama" : "Fajreal",
+            "nrp" : 1966084303953783122,
+            "tanggal_lahir" : "1966-03-02",
+            "alamat" :"Padang sidim puan"
         }
     ],
     "Mata Kuliah" : 
@@ -60,6 +72,12 @@
             "kode" : "DM001",
             "sks" : 3,
             "detail" : "sebuah proses percarian secara otomatis informasi yang berguna dalam tempat penyimpanan data berukuran besar "
+        },
+        {
+            "nama" : "Rekayasa Perangkat Lunak",
+            "kode" : "RPL056",
+            "sks" : 3,
+            "detail" : "Mempelajari dan mendalami semua cara-cara pengembangan perangkat lunak termasuk pembuatan, pemeliharaan, manajemen organisasi pengembangan perangkat lunak dan manajemen kualitas."
         }
     ]
 }
