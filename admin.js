@@ -1,10 +1,15 @@
 const express = require('./node_modules/express');
+const app = express();
 const routing = express.Router();
 
+// Calling data.json
+const showDataJSON = require('./data.json');
+app.use(express.json());
+app.use(express.urlencoded({extended: false}));
+
 // <--- 4 Methods of HTTP -->
-routing.get('/admin/:id', (req, res) => {
-    const ID = req.params.id;
-    res.send(`Get Admin id: ${ID}`);
+routing.get('/admin', (req, res) => {
+    res.status(200).send(showDataJSON);
 });
 
 routing.post('/admin', (req, res) => {
