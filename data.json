@@ -1,0 +1,29 @@
+{
+    "Mahasiswa" : 
+    [
+        {
+            "nama" : "Andre",
+            "nim"  : "2011529999",
+            "tanggal_lahir" : "2002-01-01",
+            "alamat" : "Padang"
+        }
+    ],
+    "Dosen" : 
+    [
+        {
+            "nama" : "Surya Afnarius",
+            "nrp" : 196404091995121001,
+            "tanggal_lahir" : "1964-04-09",
+            "alamat" :"Padang"
+        }
+    ],
+    "Mata Kuliah" : 
+    [
+        {
+            "nama" : "Struktur Data Algoritma",
+            "kode" : "SDA001",
+            "sks" : 3,
+            "detail" : "perancangan dan pemilihan struktur data yang sesuai implementasi, dan analisis secara umum pada algoritme yang dibuat"
+        }
+    ]
+}
