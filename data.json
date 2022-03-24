@@ -20,10 +20,16 @@
             "alamat" : "Bukittinggi"
         },
         {
-            "nama" : "Fr",
+            "nama" : "SiFranz",
             "nim"  : "2011521017",
-            "tanggal_lahir" : "2001-11-30",
-            "alamat" : "Lubuk Basung" 
+            "tanggal_lahir" : "2002-12-2",
+            "alamat" : "Medan" 
+        },
+        {
+            "nama" : "Rudi",
+            "nim"  : "2011522017",
+            "tanggal_lahir" : "2001-1-3",
+            "alamat" : "Bandung"   
         }
     ],
     "Dosen" : 
@@ -51,6 +57,12 @@
             "nrp" : 1966084303953783122,
             "tanggal_lahir" : "1966-03-02",
             "alamat" :"Padang sidim puan"
+        },
+        {
+            "nama" : "Mulyadi",
+            "nrp" : 1977082303953783112,
+            "tanggal_lahir" : "1977-07-22",
+            "alamat" :"Bandung"   
         }
     ],
     "Mata Kuliah" : 
@@ -78,6 +90,12 @@
             "kode" : "RPL056",
             "sks" : 3,
             "detail" : "Mempelajari dan mendalami semua cara-cara pengembangan perangkat lunak termasuk pembuatan, pemeliharaan, manajemen organisasi pengembangan perangkat lunak dan manajemen kualitas."
+        },
+        {
+            "nama" : "Komunikasi Bisnis",
+            "kode" : "KB121",
+            "sks" : 3,
+            "detail" : "sebuah ilmu yang mempelajari bagaimana komunikasi bisnis dengan baik dan benar " 
         }
     ]
 }
