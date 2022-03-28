@@ -1,7 +1,7 @@
 const { Sequelize, DataTypes } = require('sequelize');
 const sequelize = new Sequelize("mysql://root@localhost/loki_a6")
 
-sequelize.define('Lecturer' , {
+sequelize.define('Lecturers' , {
     id:{
         type : DataTypes.STRING,
         allowNull: false,
