@@ -6,7 +6,7 @@ sequalize.define('curricula',
 
     id:
     {
-        type :DataTypes.STRING,
+        type :DataTypes.BIGINT,
         allowNull : false,
         primaryKey : id
     },

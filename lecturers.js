@@ -3,7 +3,7 @@ const sequelize = new Sequelize("mysql://root@localhost/loki_a6")
 
 sequelize.define('Lecturers' , {
     id:{
-        type : DataTypes.STRING,
+        type : DataTypes.BIGINT,
         allowNull: false,
         primaryKey : id
     },
