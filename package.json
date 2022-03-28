@@ -1,15 +1,17 @@
 {
   "name": "latihan-expressjs",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "web.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "master reza",
   "license": "ISC",
   "keywords": [],
   "description": "",
   "dependencies": {
-    "express": "^4.17.3"
+    "express": "^4.17.3",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.17.0"
   }
 }
