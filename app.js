@@ -8,10 +8,17 @@ var express = require('../..');
 var hash = require('pbkdf2-password')()
 var path = require('path');
 var session = require ('express-session');
+
+var authRouter = require('./routes/auth');
+
 const res = require('express/lib/response');
 const { networkInterfaces } = require('os');
 
 var app = module.export = express();
+
+//auth
+
+app.use('/auth', authRouter);
 
 //config
 

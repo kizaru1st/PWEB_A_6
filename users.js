@@ -5,7 +5,7 @@ sequalize.define('users', {
 
     id : {
         type : DataTypes.BIGINT,
-        allowNull : false,
+        autoIncrement : true,
         primaryKey : id
     },
     name : {
