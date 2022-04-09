@@ -24,4 +24,26 @@ router.post('/login', function(req, res, next){
     res.json(json);
 });
 
+/*MiddleWare */
+function authenticatetoken(req, res, next )
+{
+    dotenv.config();
+    let secret = process.env.JWT_SECRET;
+    
+    const authHeader = req.header['authorization']
+    const token = authHeader && authHeader.split(' ')[1]
+
+    if (token == null) return res.sandStatus(401)
+
+    jwt.verify(token, secret, (err, user ) => 
+    {
+        console.log(err)
+
+        if(err) return res.sendStatus(403)
+
+        req.user = user
+
+        next()
+    })
+}
 module.exports = router;
