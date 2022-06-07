@@ -6,6 +6,7 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+// DOSEN ROUTER
 router.get('/dosen-profile', (req, res) => {
   res.render('dosen-profile', {
     layout: 'layouts/dosen-app',
