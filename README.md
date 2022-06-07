@@ -6,4 +6,5 @@ Anggota :
 4. Iqbal Manazil Yuni - 2011522007
 5. Muhammad Reza Rizki Rahmadi - 2011523015
 
-https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif
+<img src="[https://github.com/Xx-Ashutosh-xX/Xx-Ashutosh-xX/blob/master/assets/93195.gif](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)">
+
