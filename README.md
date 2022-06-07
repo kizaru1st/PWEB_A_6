@@ -6,4 +6,4 @@ Anggota :
 4. Iqbal Manazil Yuni - 2011522007
 5. Muhammad Reza Rizki Rahmadi - 2011523015
 
-<img src="https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif" width="40" height="40" />
+<img src="https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif" />
