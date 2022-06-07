@@ -9,7 +9,7 @@ router.get('/', function(req, res, next) {
 // DOSEN ROUTER
 router.get('/dosen-profile', (req, res) => {
   res.render('dosen-profile', {
-    layout: 'layouts/dosen-app',
+    layout: 'partials/dosen-app',
     title: 'Dashboard - Dosen',
     judulPage: 'RPS'
   })
@@ -17,7 +17,7 @@ router.get('/dosen-profile', (req, res) => {
 
 router.get('/dosen-profile-edit', (req, res) => {
   res.render('dosen-profile-edit', {
-    layout: 'layouts/dosen-app',
+    layout: 'partials/dosen-app',
     title: 'Dashboard - Dosen',
     judulPage: 'RPS'
   })
@@ -25,7 +25,7 @@ router.get('/dosen-profile-edit', (req, res) => {
 
 router.get('/dosen-rps', (req, res) => {
   res.render('dosen-rps', {
-    layout: 'layouts/dosen-app',
+    layout: 'partials/dosen-app',
     title: 'Dashboard - Dosen',
     judulPage: 'RPS'
   })

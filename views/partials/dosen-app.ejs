@@ -1,0 +1,22 @@
+<%- include('dosen-header') %> 
+
+    <div id="app">
+        <%- include('dosen-sidenav') %>
+
+        <div id="main">
+            
+            <div class="page-heading">
+                <h3><%= judulPage %></h3>
+            </div>
+            
+            <%- body %>
+            
+            <%- include('dosen-footer') %> 
+        </div>
+    </div>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/pages/dashboard.js"></script>
+    <script src="assets/js/extensions/simple-datatables.js"></script>
+</body>
+
+</html>
