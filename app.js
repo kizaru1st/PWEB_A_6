@@ -3,16 +3,15 @@ const express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-const expressLayouts = require('express-ejs-layouts');
-const app = express();
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+// Dosen
+const dosenRouter = require('./routes/dosen');
+
+const app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
-app.use(expressLayouts);
 app.use(express.static(__dirname + '/public'));
 
 app.use(logger('dev'));
@@ -21,8 +20,8 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
+// Dosen
+app.use('/dosen', dosenRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
