@@ -6,6 +6,10 @@ var logger = require('morgan');
 
 // Dosen
 const dosenRouter = require('./routes/dosen');
+// Admin
+const adminRouter = require('./routes/admin');
+// Mahasiswa
+const mahasiswaRouter = require('./routes/mahasiswa');
 
 const app = express();
 
@@ -22,6 +26,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Dosen
 app.use('/dosen', dosenRouter);
+// Admin
+app.use('/admin', adminRouter);
+// Mahasiswa
+app.use('/mahasiswa', mahasiswaRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
