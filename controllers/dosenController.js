@@ -35,6 +35,36 @@ module.exports = {
     viewDosenTambahRPS: (req, res) => {
       res.render("dosen/view_dosen-tambah-rps");
     },
+    viewDosenReferensi: (req, res) => {
+      res.render('dosen/view_dosen-referensi');
+  },
+  viewEditRPS: (req, res) => {
+      res.render('dosen/view_edit-rps');
+  },
+  viewDosenEditCPMK: (req, res) => {
+      res.render('dosen/view_dosen-edit-cpmk');
+  },
+  viewDosenEditKomponen: (req, res) => {
+      res.render('dosen/view_dosen-edit-komponen');
+  },
+  viewDosenEditPertemuan: (req, res) => {
+      res.render('dosen/view_dosen-edit-pertemuan');
+  },
+  viewDosenEditReferensi: (req, res) => {
+      res.render('dosen/view_dosen-edit-referensi');
+  },
+  viewDosenInfoCPMK: (req, res) => {
+      res.render('dosen/view_dosen-info-cpmk');
+  },
+  viewDosenInfoKomponen: (req, res) => {
+      res.render('dosen/view_dosen-info-komponen');
+  },
+  viewDosenInfoPertemuan: (req, res) => {
+      res.render('dosen/view_dosen-info-pertemuan');
+  },
+  viewDosenInfoReferensi: (req, res) => {
+      res.render('dosen/view_dosen-info-referensi');
+  },
   
   
   

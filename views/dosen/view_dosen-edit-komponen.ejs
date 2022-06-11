@@ -1,0 +1,119 @@
+<%- include('../partials/header.ejs') %> 
+    <div id="app">
+
+        <%- include('../partials/sidebar.ejs') %> 
+
+        <div id="main">
+            <header class="mb-3">
+                <a href="#" class="burger-btn d-block d-xl-none">
+                    <i class="bi bi-justify fs-3"></i>
+                </a>
+            </header>
+            <div class="page-heading">
+                <h3>EDIT KOMPONEN PENILAIAN</h3>
+            </div>
+            <!-- ----------------- -->
+            <!-- EDIT DI BAWAH INI -->
+            <!-- ----------------- -->
+
+            <section id="basic-vertical-layouts">
+                <div class="row match-height">
+                  <div class="col-md-12 col-12">
+                    <div class="card">
+                      <div class="card-content">
+                        <div class="card-body">
+                          <form class="form form-vertical">
+                            <div class="form-body">
+                              <div class="row">
+                                <div class="col-12">
+                                  <div class="form-group">
+                                    <label for="first-name-vertical">Nama Mata Kuliah</label>
+                                    <input type="text" id="first-name-vertical" class="form-control" />
+                                  </div>
+                                </div>
+                                <div class="col-12">
+                                  <div class="form-group">
+                                    <label for="first-name-vertical">Kode Mata Kuliah</label>
+                                    <input type="text" id="first-name-vertical" class="form-control" />
+                                  </div>
+                                </div>
+                                <div class="col-12">
+                                  <div class="form-group">
+                                    <label for="contact-info-vertical">Semester</label>
+                                    <input type="number" id="contact-info-vertical" class="form-control" />
+                                  </div>
+                                </div>
+                                <div class="col-12">
+                                  <div class="form-group">
+                                    <label for="first-name-vertical">SKS</label>
+                                    <input type="text" id="first-name-vertical" class="form-control" />
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-md-3">
+                                    <label>Kuis</label>
+                                  </div>
+                                  <div class="col-md-1 form-group">
+                                    <input type="text" id="first-name" class="form-control" name="fname" />
+                                  </div>
+                                </div>
+      
+                                <div class="row">
+                                  <div class="col-md-3">
+                                    <label>Tugas</label>
+                                  </div>
+                                  <div class="col-md-1 form-group">
+                                    <input type="text" id="first-name" class="form-control" name="fname" />
+                                  </div>
+                                </div>
+      
+                                <div class="row">
+                                  <div class="col-md-3">
+                                    <label>Sikap</label>
+                                  </div>
+                                  <div class="col-md-1 form-group">
+                                    <input type="text" id="first-name" class="form-control" name="fname" />
+                                  </div>
+                                </div>
+      
+                                <div class="row">
+                                  <div class="col-md-3">
+                                    <label>UTS</label>
+                                  </div>
+                                  <div class="col-md-1 form-group">
+                                    <input type="text" id="first-name" class="form-control" name="fname" />
+                                  </div>
+                                </div>
+      
+                                <div class="row">
+                                  <div class="col-md-3">
+                                    <label>UAS</label>
+                                  </div>
+                                  <div class="col-md-1 form-group">
+                                    <input type="text" id="first-name" class="form-control" name="fname" />
+                                  </div>
+                                </div>
+      
+                                <div class="col-12 d-flex justify-content-end">
+                                  <a href="dosen-komponen-nilai-tampil.html" class="btn btn-success">Simpan</a>
+                                </div>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+            <!-- ---------- -->
+            <!-- BATAS EDIT -->
+            <!-- ---------- -->
+            <%- include('../partials/footer.ejs') %> 
+        </div>
+    </div>
+<%- include('../partials/js.ejs') %> 
+</body>
+
+</html>

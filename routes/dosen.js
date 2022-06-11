@@ -13,5 +13,15 @@ router.get("/dosen-tambah-komponen", dosenController.viewDosenTambahKomponen);
 router.get("/dosen-tambah-pertemuan", dosenController.viewDosenTambahPertemuan);
 router.get("/dosen-tambah-referensi", dosenController.viewDosenTambahReferensi);
 router.get("/dosen-tambah-rps", dosenController.viewDosenTambahRPS);
+router.get('/dosen-referensi', dosenController.viewDosenReferensi);
+router.get('/edit-rps', dosenController.viewEditRPS);
+router.get('/dosen-edit-cpmk', dosenController.viewDosenEditCPMK);
+router.get('/dosen-edit-komponen', dosenController.viewDosenEditKomponen);
+router.get('/dosen-edit-pertemuan', dosenController.viewDosenEditPertemuan);
+router.get('/dosen-edit-referensi', dosenController.viewDosenEditReferensi);
+router.get('/dosen-info-cpmk', dosenController.viewDosenInfoCPMK);
+router.get('/dosen-info-komponen', dosenController.viewDosenInfoKomponen);
+router.get('/dosen-info-pertemuan', dosenController.viewDosenInfoPertemuan);
+router.get('/dosen-info-referensi', dosenController.viewDosenInfoReferensi);
 
 module.exports = router;
