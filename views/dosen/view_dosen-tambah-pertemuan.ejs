@@ -1,0 +1,119 @@
+<%- include('../partials/header.ejs') %> 
+    <div id="app">
+
+        <%- include('../partials/sidebar.ejs') %> 
+
+        <div id="main">
+            <header class="mb-3">
+                <a href="#" class="burger-btn d-block d-xl-none">
+                    <i class="bi bi-justify fs-3"></i>
+                </a>
+            </header>
+            <div class="page-heading">
+                <h3>Pertemuan</h3>
+            </div>
+            <!-- ----------------- -->
+            <!-- EDIT DI BAWAH INI -->
+            <!-- ----------------- -->
+
+            <section id="basic-horizontal-layouts">
+                <div class="row match-height">
+                  <div class="col-md-12 col-12">
+                    <div class="card">
+                      <div class="card-content">
+                        <div class="card-body">
+                          <form class="form form-horizontal">
+                            <div class="form-body">
+                              <div class="row">
+                                <div class="col-md-4">
+                                  <label>Nama Mata Kuliah</label>
+                                </div>
+                                <div class="col-md-8 form-group">
+                                  <label>Data Mining</label>
+                                </div>
+                                <div class="col-md-4">
+                                  <label>Kode Mata Kuliah</label>
+                                </div>
+                                <div class="col-md-8 form-group">
+                                  <label>JSI001</label>
+                                </div>
+                                <div class="col-md-4">
+                                  <label>SKS</label>
+                                </div>
+                                <div class="col-md-8 form-group">
+                                  <label>3</label>
+                                </div>
+                                <div class="col-md-4">
+                                  <label>Semester</label>
+                                </div>
+                                <div class="col-md-8 form-group">
+                                  <label>4</label>
+                                </div>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+      
+              <section id="basic-vertical-layouts">
+                <div class="row match-height">
+                  <div class="col-md-12 col-12">
+                    <div class="card">
+                      <div class="card-content">
+                        <div class="card-body">
+                          <form class="form form-vertical">
+                            <div class="form-body">
+                              <div class="row">
+                                <div class="col-12">
+                                  <div class="form-group">
+                                    <label for="first-name-vertical">Pertemuan</label>
+                                    <input type="text" id="first-name-vertical" class="form-control" />
+                                  </div>
+                                </div>
+                                <div class="col-12">
+                                  <div class="form-group">
+                                    <label for="first-name-vertical">Topik Pertemuan</label>
+                                    <input type="text" id="first-name-vertical" class="form-control" />
+                                  </div>
+                                </div>
+                                <div class="col-12">
+                                  <div class="form-group">
+                                    <label for="first-name-vertical">Metode Pembelajaran</label>
+                                    <input type="text" id="first-name-vertical" class="form-control" />
+                                  </div>
+                                </div>
+                                <div class="col-12">
+                                  <div class="form-group">
+                                    <label for="first-name-vertical">Student Experience</label>
+                                    <div class="form-group mb-3">
+                                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-12 d-flex justify-content-end">
+                                  <a href="dosen-pertemuan.html" class="btn btn-success">Tambah</a>
+                                </div>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+            <!-- ---------- -->
+            <!-- BATAS EDIT -->
+            <!-- ---------- -->
+            <%- include('../partials/footer.ejs') %> 
+        </div>
+    </div>
+<%- include('../partials/js.ejs') %> 
+</body>
+
+</html>

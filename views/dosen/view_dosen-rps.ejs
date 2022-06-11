@@ -1,0 +1,298 @@
+<%- include('../partials/header.ejs') %> 
+    <div id="app">
+
+        <%- include('../partials/sidebar.ejs') %> 
+
+        <div id="main">
+            <header class="mb-3">
+                <a href="#" class="burger-btn d-block d-xl-none">
+                    <i class="bi bi-justify fs-3"></i>
+                </a>
+            </header>
+            <div class="page-heading">
+                <h3>RPS</h3>
+            </div>
+            <!-- ----------------- -->
+            <!-- EDIT DI BAWAH INI -->
+            <!-- ----------------- -->
+            <section id="basic-horizontal-layouts">
+                <div class="row match-height">
+                  <div class="col-md-12 col-12">
+                    <div class="card">
+                      <div class="card-content">
+                        <div class="card-body">
+                          <form class="form form-horizontal">
+                            <div class="form-body">
+                              <div class="row">
+                                <div class="col-md-4">
+                                  <label>Nama Mata Kuliah</label>
+                                </div>
+                                <div class="col-md-8 form-group">
+                                  <label></label>
+                                </div>
+                                <div class="col-md-4">
+                                  <label>Kode Mata Kuliah</label>
+                                </div>
+                                <div class="col-md-8 form-group">
+                                  <label></label>
+                                </div>
+                                <div class="col-md-4">
+                                  <label>SKS</label>
+                                </div>
+                                <div class="col-md-8 form-group">
+                                  <label></label>
+                                </div>
+                                <div class="col-md-4">
+                                  <label>Semester</label>
+                                </div>
+                                <div class="col-md-8 form-group">
+                                  <label></label>
+                                </div>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <section class="section">
+                  <div class="row" id="basic-table">
+                    <div class="col-12 col-md-12">
+                      <div class="card">
+                        <div class="card-header">
+                          <h6 class="card-title">Pertemuan</h6>
+                        </div>
+                        <div class="col-12 d-flex justify-content-end">
+                                          
+                          <a href="dosen-tambah-pertemuan.html" type="button" class="btn btn-success">Tambah<a>
+                          <a href="dosen-edit-pertemuan.html" type="button" class="btn btn-success">Edit<a>
+                          <a href="#" type="button" class="btn btn-success">Hapus<a>
+           
+                        </div>
+            
+                                      <div class="card-content">
+                                          <div class="card-body">
+                                              <!-- Table with outer spacing -->
+                                              <div class="table-responsive">
+                                                  <table class="table table-lg">
+                                                      <thead>
+                                                          <tr>
+                                                              <th>No</th>
+                                                              <th>Pertemuan</th>
+                                                              <th>Topik Pertemuan</th>
+                                                              <th>Materi Pembelajaran</th>
+                                                              <th>Aksi</th>
+                                                             
+                                                          </tr>
+                                                      </thead>
+                                                      <tbody>
+                                                          <tr>
+                                                              <td class="text-bold-500">1</td>
+                                                              <td class="text-bold-500">Pertemuan 1</td>
+                                                              <td class="text-bold-500">Naive Bayes Classifier</td>
+                                                              <td class="text-bold-500">Project based learning</td>
+                                                              <td>
+                                                                <a href="dosen-info-pertemuan.html" class="bi bi-info"></a>
+                                                                  
+                                                              </td>
+                                                            
+                                                          </tr>
+                                                          <tr>
+                                                              <td class="text-bold-500">2</td>
+                                                              <td class="text-bold-500">Pertemuan 2</td>
+                                                              <td class="text-bold-500">Clustering K_Means</td>
+                                                              <td class="text-bold-500">Casa base method</td>
+                                                              <td>
+                                                                <a href="dosen-info-pertemuan.html" class="bi bi-info"></a>
+                                                                  
+                                                              </td>
+                                                            
+                                                          </tr>
+                                                          
+                                                      </tbody>
+                                                  </table>
+                                              </div>
+                                          </div>
+                                      </div>
+                                
+                      </div>
+                    </div>
+                </section>
+                <section id="basic-vertical-layouts">
+                  <div class="row match-height">
+                      <div class="col-md-12 col-12">
+                          <div class="card">
+                              <div class="card-header">
+                                  <h6 class="card-title">Reference</h6>
+                              </div>
+                              <div class="col-12 d-flex justify-content-end">
+                                          
+                                <a href="dosen-tambah-referensi.html" type="button" class="btn btn-success">Tambah<a>
+                                <a href="dosen-edit-referensi.html" type="button" class="btn btn-success">Edit<a>
+                                <a href="#" type="button" class="btn btn-success">Hapus<a>
+                   
+                   
+                                </div>
+                              <div class="card-content">
+                                  <div class="card-body">
+                                      <!-- Table with outer spacing -->
+                                      <div class="table-responsive">
+                                          <table class="table table-lg">
+                                              <thead>
+                                                  <tr>
+                                                      <th>No</th>
+                                                      <th>Title</th>
+                                                      <th>Aksi</th>
+                                                     
+                                                  </tr>
+                                              </thead>
+                                              <tbody>
+                                                  <tr>
+                                                      <td class="text-bold-500">1</td>
+                                                      <td class="text-bold-500">Cyber security training for critical infrastructure protection</td>
+                                                   
+                                                      <td>
+                                                        <a href="dosen-info-referensi.html" class="bi bi-info"></a>
+                                                          
+                                                      </td>
+                                                    
+                                                  </tr>
+                                                  <tr>
+                                                      <td class="text-bold-500">2</td>
+                                                      <td class="text-bold-500">Cyber-security on smart grid Threats and potential solutions</td>
+                                                     
+                                                      <td>
+                                                        <a href="dosen-info-referensi.html" class="bi bi-info"></a>
+                                                          
+                                                      </td>
+                                                    
+                                                  </tr>
+                                              </tbody>
+                                          </table>
+                                      </div>
+                                  </div>
+                              </div>
+                        </div>
+                       </section>
+                       
+                      <section id="basic-horizontal-layouts">
+                        <div class="row match-height">
+                          <div class="col-md-12 col-12">
+                            <div class="card">
+                              <div class="card-header">
+                                <h6 class="card-title">CPMK</h6>
+                            </div>
+                            <div class="col-12 d-flex justify-content-end">
+                                          
+                              <a href="dosen-tambah-cpmk.html" type="button" class="btn btn-success">Tambah<a>
+                              <a href="dosen-edit-cpmk.html" type="button" class="btn btn-success">Edit<a>
+                              <a href="#" type="button" class="btn btn-success">Hapus<a>
+                 
+               
+                            </div>
+                            <div class="card-content">
+                                <div class="card-body">
+                                  <form class="form form-horizontal">
+                                    <div class="form-body">
+                                      <div class="row">
+                                        <div class="col-md-4">
+                                          <label>1.</label>
+                                        </div>
+                                        <div class="col-md-8 form-group">
+                                          <label></label>
+                                        </div>
+                                        <div class="col-md-4">
+                                          <label>2.</label>
+                                        </div>
+                                        <div class="col-md-8 form-group">
+                                          <label></label>
+                                        </div>
+                                        <div class="col-md-4">
+                                          <label>3.</label>
+                                        </div>
+                                        <div class="col-md-8 form-group">
+                                          <label></label>
+                                        </div>
+                                        <div class="col-md-4">
+                                          <label>4.</label>
+                                        </div>
+                                        <div class="col-md-8 form-group">
+                                          <label></label>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                       </section>
+                       <section id="basic-vertical-layouts">
+                          <div class="row match-height">
+                              <div class="col-md-12 col-12">
+                                  <div class="card">
+                                      <div class="card-header">
+                                          <h6 class="card-title">Komponen Penilaian</h6>
+                                      </div>
+                                      <div class="col-12 d-flex justify-content-end">
+                                          
+                                        <a href="dosen-tambah-komponen.html" type="button" class="btn btn-success">Tambah<a>
+                                        <a href="dosen-edit-komponen.html" type="button" class="btn btn-success">Edit<a>
+                                        <a href="#" type="button" class="btn btn-success">Hapus<a>
+                           
+                           
+                                        </div>
+                                        
+                                      <div class="card-content">
+                                          <div class="card-body">
+                                              <!-- Table with outer spacing -->
+                                              <div class="table-responsive">
+                                                  <table class="table table-lg">
+                                                      <thead>
+                                                          <tr>
+                                                              <th>No</th>
+                                                              <th>Kode Mata Kuliah</th>
+                                                              <th>Mata Kuliah</th>
+                                                              <th>SKS</th>
+                                                              <th>Semester</th>
+                                                              <th>Aksi</th>
+                                                             
+                                                          </tr>
+                                                      </thead>
+                                                      <tbody>
+                                                          <tr>
+                                                              <td class="text-bold-500">1</td>
+                                                              <td class="text-bold-500">JSI 001</td>
+                                                              <td class="text-bold-500">Data Mining</td>
+                                                              <td class="text-bold-500">3</td>
+                                                              <td class="text-bold-500">4</td>
+                                                              <td>
+                                                                  <a href="dosen-info-komponen.html" class="bi bi-info"></a>
+                                                                  
+                                                              </td>
+                                                            
+                                                          </tr>
+                                                          
+                                                      </tbody>
+                                                  </table>
+                                              </div>
+                                          </div>
+                                      </div>
+                                </div>
+                               </section>
+                       
+              </section>
+
+
+            <!-- ---------- -->
+            <!-- BATAS EDIT -->
+            <!-- ---------- -->
+            <%- include('../partials/footer.ejs') %> 
+        </div>
+    </div>
+<%- include('../partials/js.ejs') %> 
+</body>
+
+</html>
