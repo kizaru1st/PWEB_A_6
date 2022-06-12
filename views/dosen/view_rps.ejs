@@ -116,7 +116,10 @@
                     </div>
                   </div>
                 </section>
-                <a href="dosen-rps.html" class="btn btn-success">Tambah RPS</a>
+                <button type="button" class="btn btn-outline-primary block" data-bs-toggle="modal"
+                data-bs-target="#default">
+                Tambah RPS
+            </button>
 
 
 
@@ -126,6 +129,7 @@
             <%- include('../partials/footer.ejs') %> 
         </div>
     </div>
+    <%- include('./rps/add-modal-rps.ejs') %>
 <%- include('../partials/js.ejs') %> 
 </body>
 
