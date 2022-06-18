@@ -28,25 +28,25 @@
                                   <label>Nama Mata Kuliah</label>
                                 </div>
                                 <div class="col-md-8 form-group">
-                                  <label></label>
+                                  <label>Penjaskes</label>
                                 </div>
                                 <div class="col-md-4">
                                   <label>Kode Mata Kuliah</label>
                                 </div>
                                 <div class="col-md-8 form-group">
-                                  <label></label>
+                                  <label>PJ001</label>
                                 </div>
                                 <div class="col-md-4">
                                   <label>SKS</label>
                                 </div>
                                 <div class="col-md-8 form-group">
-                                  <label></label>
+                                  <label>5</label>
                                 </div>
                                 <div class="col-md-4">
                                   <label>Semester</label>
                                 </div>
                                 <div class="col-md-8 form-group">
-                                  <label></label>
+                                  <label>5</label>
                                 </div>
                               </div>
                             </div>
@@ -65,9 +65,10 @@
                         </div>
                         <div class="col-12 d-flex justify-content-end">
                                           
-                          <a href="dosen-tambah-pertemuan.html" type="button" class="btn btn-success">Tambah<a>
-                          <a href="dosen-edit-pertemuan.html" type="button" class="btn btn-success">Edit<a>
-                          <a href="#" type="button" class="btn btn-success">Hapus<a>
+                          <button type="button" class="btn btn-outline-primary block" data-bs-toggle="modal" data-bs-target="#default">
+                            Tambah Pertemuan
+                          </button>
+                          <a href="dosen-edit-pertemuan.html" type="button" class="btn btn-success mx-1">Edit<a>
            
                         </div>
             
@@ -94,7 +95,7 @@
                                                               <td class="text-bold-500">Project based learning</td>
                                                               <td>
                                                                 <a href="dosen-info-pertemuan.html" class="bi bi-info"></a>
-                                                                  
+                                                                <i class="bi bi-archive"></i>
                                                               </td>
                                                             
                                                           </tr>
@@ -105,7 +106,7 @@
                                                               <td class="text-bold-500">Casa base method</td>
                                                               <td>
                                                                 <a href="dosen-info-pertemuan.html" class="bi bi-info"></a>
-                                                                  
+                                                                <i class="bi bi-archive"></i>
                                                               </td>
                                                             
                                                           </tr>
@@ -292,6 +293,8 @@
             <%- include('../partials/footer.ejs') %> 
         </div>
     </div>
+    <%- include('./dosen-rps/modal-pertemuan-add-rps.ejs') %>
+    <%- include('./dosen-rps/modal-pertemuan-edit-rps.ejs') %>
 <%- include('../partials/js.ejs') %> 
 </body>
 

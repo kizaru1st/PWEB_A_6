@@ -1,3 +1,11 @@
 <script src="/assets/js/app.js"></script>
 <script src="/assets/js/pages/dashboard.js"></script>
 <script src="/assets/js/extensions/simple-datatables.js"></script>
+<script>
+    function onlyNumberKey(inputUser) {
+        var ASCIICode = (inputUser.which) ? inputUser.which : inputUser.keyCode
+        if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57))
+            return false;
+        return true;
+    }
+</script>
