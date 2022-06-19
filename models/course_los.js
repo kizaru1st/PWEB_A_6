@@ -3,7 +3,7 @@ const { Sequelize, DataTypes } = require("sequelize");
 const course_los = sequelize.define(
   "course_los",
   {
-    // primary key
+    // primary key asd
     id: {
       type: DataTypes.BIGINT,
       allowNull: false,
