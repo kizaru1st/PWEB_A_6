@@ -1,7 +1,7 @@
 const { Sequelize, DataTypes } = require("sequelize");
 
-const course_los = sequelize.define(
-  "course_los",
+const curriculum_los = sequelize.define(
+  "curriculum_los",
   {
     // primary key
     id: {
@@ -10,20 +10,17 @@ const course_los = sequelize.define(
       autoIncrement: true,
       primaryKey: true,
     },
+
     // foreign key
-    course_plan_id: {
+    curriculum_id: {
       type: DataTypes.BIGINT,
       allowNull: false,
       references: {
-        model: course_plans,
+        model: curricula,
         key: "id",
       },
     },
 
-    type: {
-      type: DataTypes.INT,
-      allowNull: false,
-    },
     code: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -33,21 +30,21 @@ const course_los = sequelize.define(
       type: DataTypes.TEXT,
       allowNull: false,
     },
-    //foreign key
-    parent_id: {
-      type: DataTypes.BIGINT,
+
+    type: {
+      type: DataTypes.INT,
       allowNull: false,
-      references: {
-        model: course_los,
-        key: "id",
-      },
+    },
+
+    description: {
+      type: DataTypes.TEXT,
     },
 
     created_at: {
       type: DataTypes.DATE,
       allowNull: true,
     },
-    
+
     updated_at: {
       type: DataTypes.DATE,
       allowNull: true,
@@ -55,8 +52,8 @@ const course_los = sequelize.define(
   },
 
   {
-    tableName: "course_los",
+    tableName: "curriculum_los",
   }
 );
 
-module.exports = course_los;
+module.exports = curriculum_los;
