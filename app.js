@@ -1,8 +1,11 @@
-var createError = require('http-errors');
+require("module-alias/register");
+const createError = require('http-errors');
+const { json } = require("express");
 const express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
+const path = require('path');
+const cookieParser = require('cookie-parser');
+const logger = require('morgan');
+const cors = require("cors");
 
 // Dosen
 const dosenRouter = require('./routes/dosen');
@@ -17,7 +20,8 @@ const app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 app.use(express.static(__dirname + '/public'));
-
+app.use(json());
+app.use(cors());
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
