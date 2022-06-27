@@ -78,45 +78,6 @@
                     <tr>
                       <td>1</td>
                       <td>JSI001</td>
-                      <td>Data Mining</td>
-                      <td>3</td>
-                      <td>4</td>
-                      <td>
-
-                        <a href="/dosen/dosen-rps">
-                          <i class="bi bi-info"></i>
-                        </a>
-                        <i class="bi bi-archive"></i>
-
-                        <button type="button" class="btn btn-outline-primary block" data-bs-toggle="modal"
-                          data-bs-target="#border-less">
-                          <i class="bi bi-pencil"></i>
-                        </button>
-
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>2</td>
-                      <td>JSI002</td>
-                      <td>PBD</td>
-                      <td>3</td>
-                      <td>4</td>
-                      <td>
-                        <a href="/dosen/dosen-rps">
-                          <i class="bi bi-info"></i>
-                        </a>
-                        <i class="bi bi-archive"></i>
-
-                        <button type="button" class="btn btn-outline-primary block" data-bs-toggle="modal"
-                          data-bs-target="#border-less">
-                          <i class="bi bi-pencil"></i>
-                        </button>
-
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>3</td>
-                      <td>JSI003</td>
                       <td>Pemrograman Website</td>
                       <td>3</td>
                       <td>4</td>
@@ -127,10 +88,9 @@
                         </a>
                         <i class="bi bi-archive"></i>
 
-                        <button type="button" class="btn btn-outline-primary block" data-bs-toggle="modal"
-                          data-bs-target="#border-less">
+                        <a href="/dosen/edit-rps" class="btn btn-outline-primary block">
                           <i class="bi bi-pencil"></i>
-                        </button>
+                        </a>
 
                       </td>
                     </tr>
@@ -139,9 +99,9 @@
               </div>
             </div>
           </section>
-          <button type="button" class="btn btn-outline-primary block" data-bs-toggle="modal" data-bs-target="#default">
+          <a href="/dosen/dosen-tambah-rps" class="btn btn-outline-primary block">
             Tambah RPS
-          </button>
+          </a>
 
 
 
@@ -151,8 +111,6 @@
           <%- include('../partials/footer.ejs') %>
         </div>
       </div>
-      <%- include('./rps/modal-add-rps.ejs') %>
-        <%- include('./rps/modal-edit-rps.ejs') %>
           <%- include('../partials/js.ejs') %>
             </body>
 

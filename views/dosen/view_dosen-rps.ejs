@@ -65,10 +65,9 @@
                   </div>
                   <div class="col-12 d-flex justify-content-end">
 
-                    <button type="button" class="mx-2 btn btn-outline-primary block" data-bs-toggle="modal"
-                      data-bs-target="#default">
+                    <a class="mx-2 btn btn-outline-primary block" href="/dosen/dosen-tambah-pertemuan">
                       Tambah Pertemuan
-                    </button>
+                    </a>
 
                   </div>
 
@@ -98,6 +97,9 @@
                               <td class="text-bold-500">K-Means</td>
                               <td>
                                 <i class="bi bi-archive"></i>
+                                <a href="/dosen/dosen-edit-pertemuan">
+                                  <i class="bi bi-pencil"></i>
+                                </a>
                               </td>
                             </tr>
                           </tbody>
@@ -118,10 +120,9 @@
                   </div>
                   <div class="col-12 d-flex justify-content-end">
 
-                    <button type="button" class="mx-2 btn btn-outline-primary block" data-bs-toggle="modal"
-                      data-bs-target="#border-less">
+                    <a href="/dosen/dosen-tambah-referensi" class="mx-2 btn btn-outline-primary block">
                       Tambah Referensi
-                    </button>
+                    </a>
                     <!-- <a href="dosen-edit-referensi.html" type="button" class="btn btn-success">Edit<a>
                             <a href="#" type="button" class="btn btn-success">Hapus<a> -->
 
@@ -153,7 +154,7 @@
                               </td>
 
                               <td>
-                                <a href="dosen-info-referensi.html" class="bi bi-info"></a>
+                                <a href="/dosen/dosen-info-referensi" class="bi bi-info"></a>
 
                               </td>
 
@@ -174,9 +175,7 @@
                     <h6 class="card-title">CPMK</h6>
                   </div>
                   <div class="col-12 d-flex justify-content-end">
-                    <a href="dosen-tambah-cpmk.html" type="button" class="mx-2 btn btn-success">Tambah<a>
-                        <!-- <a href="dosen-edit-cpmk.html" type="button" class="btn btn-success">Edit<a>
-                    <a href="#" type="button" class="btn btn-success">Hapus<a> -->
+                    <a href="/dosen/dosen-tambah-cpmk" class="mx-2 btn btn-outline-primary block">Tambah CPMK<a>
                   </div>
                   <div class="card-content">
                     <div class="card-body">
@@ -277,9 +276,7 @@
         <%- include('../partials/footer.ejs') %>
       </div>
   </div>
-  <%- include('./dosen-rps/modal-pertemuan-add-rps.ejs') %>
-    <%- include('./dosen-rps/modal-referensi-add-rps.ejs') %>
-      <%- include('../partials/js.ejs') %>
-        </body>
+  <%- include('../partials/js.ejs') %>
+    </body>
 
-        </html>
+    </html>
