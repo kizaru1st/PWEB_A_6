@@ -21,20 +21,12 @@ module.exports = (sequelize, DataTypes) => {
       curriculum_lo_id: {
         type: DataTypes.BIGINT,
         allowNull: false,
-        references: {
-          model: curriculum_los,
-          key: "id",
-        },
       },
 
       //foreign key
       course_lo_id: {
         type: DataTypes.BIGINT,
         allowNull: false,
-        references: {
-          model: course_los,
-          key: "id",
-        },
       },
 
       created_at: {

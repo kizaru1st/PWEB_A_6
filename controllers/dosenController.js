@@ -1,3 +1,7 @@
+const courses = require("../models").courses;
+
+
+
 module.exports = {
   // START - CRUD RPS
   viewRPS: (req, res) => {

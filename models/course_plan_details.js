@@ -22,13 +22,9 @@ module.exports = (sequelize, DataTypes) => {
       course_plan_id: {
         type: DataTypes.BIGINT,
         allowNull: false,
-        references: {
-          model: course_plans,
-          key: "id",
-        },
       },
       week: {
-          type: DataTypes.INT,
+          type: DataTypes.INTEGER,
           allowNull: false,
       },
       material: {

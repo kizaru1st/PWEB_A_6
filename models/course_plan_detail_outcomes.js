@@ -22,18 +22,10 @@ module.exports = (sequelize, DataTypes) => {
       course_plan_detail_id: {
         type: DataTypes.BIGINT,
         allowNull: false,
-        references: {
-          model: course_plan_details,
-          key: "id",
-        },
       },
       course_lo_id: {
           type: DataTypes.BIGINT,
           allowNull: false,
-          references: {
-              model: course_los,
-              key: "id",
-            },
       },
       created_at: {
           type: DataTypes.DATE,

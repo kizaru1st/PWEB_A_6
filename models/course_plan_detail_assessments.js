@@ -22,19 +22,11 @@ module.exports = (sequelize, DataTypes) => {
       course_plan_detail_id: {
         type: DataTypes.BIGINT,
         allowNull: false,
-        references: {
-          model: course_plans_details,
-          key: "id",
-        },
       },
        // foreign key
        course_plan_assessment_id: {
           type: DataTypes.BIGINT,
           allowNull: false,
-          references: {
-            model: course_plan_assessments,
-            key: "id",
-          },
       },
       percentage: {
           type: DataTypes.DOUBLE,

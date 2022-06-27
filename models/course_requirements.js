@@ -22,23 +22,15 @@ module.exports = (sequelize, DataTypes) => {
       course_id: {
         type: DataTypes.BIGINT,
         allowNull: false,
-        references: {
-          model: courses,
-          key: "id",
-        },
       },
       // foreign key
       required_course_id: {
           type: DataTypes.BIGINT,
-          allowNull: false,
-          references: {
-              model: courses,
-              key: "id",
-        },
+          allowNull: false
       },
   
       required_level: {
-          type: DataTypes.INT,
+          type: DataTypes.INTEGER,
           allowNull : false
       },
   

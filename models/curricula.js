@@ -28,13 +28,13 @@ module.exports = (sequelize, DataTypes) => {
       },
 
       year_start: {
-        type: DataTypes.INT,
+        type: DataTypes.DATE,
         allowNull: false,
       },
 
       year_end: {
-        type: DataTypes.INT,
-        allowNull: false,
+        type : DataTypes.INTEGER,
+        allownull : false
       },
 
       description: {

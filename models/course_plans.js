@@ -23,14 +23,10 @@ module.exports = (sequelize, DataTypes) => {
     course_id: {
       type: DataTypes.BIGINT,
       allowNull: false,
-      references: {
-        model: courses,
-        key: "id",
-      },
     },
 
     rev: {
-        type: DataTypes.INT,
+        type: DataTypes.INTEGER,
         allowNull: false
     },
 
@@ -49,12 +45,12 @@ module.exports = (sequelize, DataTypes) => {
     },
 
     credit: {
-        type: DataTypes.INT,
+        type: DataTypes.INTEGER,
         allowNull: false
     },
 
     semester: {
-        type: DataTypes.INT,
+        type: DataTypes.INTEGER,
         allowNull: false
     },
     
