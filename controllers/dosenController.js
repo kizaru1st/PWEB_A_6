@@ -1,7 +1,28 @@
 module.exports = {
+  // START - CRUD RPS
   viewRPS: (req, res) => {
     res.render("dosen/view_rps");
+  },  
+  createRPS: (req, res) => {
+
   },
+  storeRPS: (req, res) => {
+
+  },
+  showRPS: (req, res) => {
+
+  },
+  editRPS: (req, res) => {
+
+  },
+  updateRPS: (req, res) => {
+
+  },
+  destroyRPS: (req, res) => {
+
+  },
+  // END - CRUD RPS
+
   viewDosenRPS: (req, res) => {
     res.render("dosen/view_dosen-rps");
   },
