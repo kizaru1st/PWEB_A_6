@@ -1,0 +1,47 @@
+<div class="row match-height">
+    <div class="col-md-12 col-12">
+      <div class="card">
+        <div class="card-header">
+          <h6 class="card-title">Reference</h6>
+        </div>
+
+        <div class="card-content">
+          <div class="card-body">
+            <!-- Table with outer spacing -->
+            <div class="table-responsive">
+              <table class="table table-lg">
+                <thead>
+                  <tr>
+                    <th>No</th>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Publisher</th>
+                    <th>Year</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <% referensi.forEach(function(ref, index) { %>
+                    <tr>
+                      <td class="text-bold-500">
+                        <%= index+=1 %>
+                      </td>
+                      <td class="text-bold-500">
+                        <%= ref.title %>
+                      </td>
+                      <td class="text-bold-500">
+                        <%= ref.author %>
+                      </td>
+                      <td class="text-bold-500">
+                        <%= ref.publisher %>
+                      </td>
+                      <td class="text-bold-500">
+                        <%= ref.year %>
+                      </td>
+                    </tr>
+                    <% }) %>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>

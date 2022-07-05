@@ -1,58 +1,63 @@
-"use strict";
-const { Model } = require("sequelize");
-module.exports = (sequelize, DataTypes) => {
-    // === LANGKAH 1 UBAH course_plan_lecturers DIBAWAH MENJADI NAMA SESUAI MODEL === 
-  class course_plan_lecturers extends Model {
+const { Sequelize, DataTypes } = require('sequelize');
+const sequelize = require("./dbconfig");
 
-    static associate(models) {}
-  }
-//   === LANGKAH 2 UBAH NAMA course_plan_lecturers.INIT SESUAI NAMA MODEL ===
-  course_plan_lecturers.init(
+const course_plans = require("./course_plans");
+const lecturers = require("./lecturers");
+
+const course_plan_lecturers = sequelize.define('course_plan_lecturers' ,
+{
+    id:
     {
-
-        // === LANGKAH 3 UBAH DIBAWAH INI SESUAI YANG UDAH DIBUAT SEBELUMNYA ===
-      // primary key
-    id: {
-        type: DataTypes.BIGINT,
+        type : DataTypes.BIGINT,
         allowNull: false,
-        autoIncrement: true,
-        primaryKey: true,
-      },
-      // foreign key
-      course_plan_id: {
-        type: DataTypes.BIGINT,
-        allowNull: false
-      },
-      lecturer_id: {
-          type: DataTypes.BIGINT,
-          allowNull: false
-      },
-      creator: {
-          type: DataTypes.INTEGER,
-          allowNull: false,
-      },
-      created_at: {
-          type: DataTypes.DATE,
-          allowNull: true
-      },
-      updated_at: {
-          type: DataTypes.DATE,
-          allowNull: true
-      },
-    //   === AKHIR DARI LANGKAH 3 ===
-
-
+        primaryKey : true,
+        autoIncrement: true
     },
+
+    course_plan_id:
     {
-        // LANGKAH 4 UBAH NAMA TABLE NAME SESUAI NAMA MODELS
-      tableName: "course_plan_lecturers", //EDIT HANYA INI SAJA -> LANGKAH 4
-      sequelize,
-      freezeTableName: true,
-      timestamps: true,
-      updatedAt: "updated_at",
-      createdAt: "created_at",
+        type : DataTypes.BIGINT,
+        allowNull: false,
+        references: {
+          model: course_plans,
+          key: 'id'
+        }
+    },
+    
+    lecturer_id:
+    {
+        type : DataTypes.BIGINT,
+        allowNull: false,
+        references: {
+          model: lecturers,
+          key: 'id'
+        }
+    },
+
+    creator:
+    {
+        type : DataTypes.INTEGER,
+        allowNull: false 
+    },
+
+    created_at:
+    {
+        type : DataTypes.DATE,
+    },
+
+    updated_at:
+    {
+        type : DataTypes.DATE,
+
     }
-  );
-//   LANGKAH 5 UBAH NAMA course_plan_lecturers SESUAI NAMA MODELS
-  return course_plan_lecturers; //EDIT HANYA INI SAJA -> LANGKAH 5
-};
+    }, 
+    
+    {
+    tableName: 'course_plan_lecturers',
+    timestamps: true,
+    updatedAt: 'updated_at',
+    createdAt: 'created_at'
+
+});
+
+module.exports = course_plan_lecturers;

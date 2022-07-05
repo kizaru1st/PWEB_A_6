@@ -2,116 +2,121 @@
   <div id="app">
 
     <%- include('../partials/sidebar.ejs') %>
+      <%- include('../partials/navbar.ejs') %>
 
-      <div id="main">
-        <header class="mb-3">
-          <a href="#" class="burger-btn d-block d-xl-none">
-            <i class="bi bi-justify fs-3"></i>
-          </a>
-        </header>
-        <div class="page-heading">
-          <h3>Halaman RPS</h3>
-        </div>
-        <!-- ----------------- -->
-        <!-- EDIT DI BAWAH INI -->
-        <!-- ----------------- -->
-        <section id="basic-horizontal-layouts">
-          <div class="row match-height">
-            <div class="col-md-6 col-12">
-              <div class="card">
-                <div class="card-content">
-                  <div class="card-body">
-                    <form class="form form-horizontal">
-                      <div class="form-body">
-                        <div class="row">
-                          <div class="col-md-4">
-                            <label>Nama Dosen</label>
-                          </div>
-                          <div class="col-md-8 form-group">
-                            <label>Dila Si Paling Macet</label>
-                          </div>
-                          <div class="col-md-4">
-                            <label>No HP</label>
-                          </div>
-                          <div class="col-md-8 form-group">
-                            <label>Ga punya, HP nyebur ke laut</label>
-                          </div>
-                          <div class="col-md-4">
-                            <label>Status</label>
-                          </div>
-                          <div class="col-md-8 form-group">
-                            <label>Ditinggal nikah bg don</label>
+        <div id="main">
+          <header class="mb-3">
+            <a href="#" class="burger-btn d-block d-xl-none">
+              <i class="bi bi-justify fs-3"></i>
+            </a>
+          </header>
+          <div class="page-heading">
+            <h3>Halaman RPS</h3>
+          </div>
+          <!-- ----------------- -->
+          <!-- EDIT DI BAWAH INI -->
+          <!-- ----------------- -->
+          <section id="basic-horizontal-layouts">
+            <div class="row match-height">
+              <div class="col-md-6 col-12">
+                <div class="card">
+                  <div class="card-content">
+                    <div class="card-body">
+                      <form class="form form-horizontal">
+                        <div class="form-body">
+                          <div class="row">
+                            <div class="col-md-4">
+                              <label>Nama Dosen</label>
+                            </div>
+                            <div class="col-md-8 form-group">
+                              <label>
+                                <%= nama %>
+                              </label>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    </form>
+                      </form>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
 
-        <div class="page-heading">
-          <div class="page-title">
-            <div class="row">
-              <div class="col-12 col-md-6 order-md-1 order-last"></div>
-              <div class="col-12 col-md-6 order-md-2 order-first"></div>
-            </div>
-          </div>
-
-          <section class="section">
-            <div class="card">
-              <div class="card-body">
-                <table class="table table-striped" id="table1">
-                  <thead>
-                    <tr>
-                      <th>No</th>
-                      <th>Kode Mata Kuliah</th>
-                      <th>Mata Kuliah</th>
-                      <th>SKS</th>
-                      <th>Semester</th>
-                      <th>Aksi</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>1</td>
-                      <td>JSI001</td>
-                      <td>Pemrograman Website</td>
-                      <td>3</td>
-                      <td>4</td>
-                      <td>
-
-                        <a href="/dosen/dosen-rps">
-                          <i class="bi bi-info"></i>
-                        </a>
-                        <i class="bi bi-archive"></i>
-
-                        <a href="/dosen/edit-rps" class="btn btn-outline-primary block">
-                          <i class="bi bi-pencil"></i>
-                        </a>
-
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+          <div class="page-heading">
+            <div class="page-title">
+              <div class="row">
+                <div class="col-12 col-md-6 order-md-1 order-last"></div>
+                <div class="col-12 col-md-6 order-md-2 order-first"></div>
               </div>
             </div>
-          </section>
-          <a href="/dosen/dosen-tambah-rps" class="btn btn-outline-primary block">
-            Tambah RPS
-          </a>
+
+            <section class="section">
+              <div class="card">
+                <div class="card-body">
+                  <table class="table table-striped" id="table1">
+                    <thead>
+                      <tr>
+                        <th>No</th>
+                        <th>Kode Mata Kuliah</th>
+                        <th>Mata Kuliah</th>
+                        <th>SKS</th>
+                        <th>Semester</th>
+                        <th>Aksi</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <% matkuldosen.forEach(function(matDos, index) { %>
+                        <tr>
+                          <td>
+                            <%= index+1 %>
+                          </td>
+                          <td>
+                            <%= matDos.code %>
+                          </td>
+                          <td>
+                            <%= matDos.name %>
+                          </td>
+                          <td>
+                            <%= matDos.credit %>
+                          </td>
+                          <!-- <td><%= matDos.rev %></td> -->
+                          <td>
+                            <%= matDos.semester %>
+                          </td>
+
+
+                          <td>
+                            <a href="/dosen/detailrps/<%= matDos.id %>">
+                              <i class="bi bi-info"></i>
+                            </a>
+                            <a href="/dosen/revisirps/<%= matDos.id %>">
+                              <i class="bi bi-bandaid"></i>
+                            </a>
+                            <a href="/dosen/ubahrps/<%= matDos.id %>">
+                              <i class="bi bi-pencil"></i>
+                            </a>
+                          </td>
+                        </tr>
+                        <% }) %>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </section>
+            <!-- <a href="/dosen/tambahrps" class="btn btn-outline-primary block">
+              Tambah RPS
+            </a> -->
 
 
 
-          <!-- ---------- -->
-          <!-- BATAS EDIT -->
-          <!-- ---------- -->
-          <%- include('../partials/footer.ejs') %>
+            <!-- ---------- -->
+            <!-- BATAS EDIT -->
+            <!-- ---------- -->
+            <%- include('../partials/footer.ejs') %>
+          </div>
         </div>
-      </div>
-          <%- include('../partials/js.ejs') %>
-            </body>
+        <%- include('../partials/js.ejs') %>
+          </body>
 
-            </html>
+          </html>

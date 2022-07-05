@@ -1,0 +1,80 @@
+<section id="basic-horizontal-layouts">
+    <div class="row match-height">
+        <div class="col-md-12 col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h6 class="card-title">Pertemuan</h6>
+                </div>
+                <div class="card-content">
+                    <div class="card-body">
+                        <div class="form-body">
+                            <div class="row">
+                                <!-- table hover -->
+                                <table class="table table-hover mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th>Minggu ke</th>
+                                            <th>Materi ajar</th>
+                                            <th>Metode Pembelajaran</th>
+                                            <th>Pengalaman Belajar</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <% pertemuan.forEach(function(pmgg, index) { %>
+                                            <tr>
+                                                <td>
+                                                    <%= pmgg.week %>
+                                                </td>
+                                                <td>
+                                                    <%= pmgg.material %>
+                                                </td>
+                                                <td>
+                                                    <%= pmgg.method %>
+                                                </td>
+                                                <td>
+                                                    <%= pmgg.student_experience %>
+                                                </td>
+                                            </tr>
+                                            <% }) %>
+                                    </tbody>
+                                </table>
+                                <br />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

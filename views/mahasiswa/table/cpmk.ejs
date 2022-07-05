@@ -1,0 +1,41 @@
+<section id="basic-horizontal-layouts">
+    <div class="row match-height">
+        <div class="col-md-12 col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h6 class="card-title">CPMK</h6>
+                </div>
+                <div class="card-content">
+                    <div class="card-body">
+                        <div class="form-body">
+                            <div class="row">
+                                <table class="table table-hover mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th>Kode</th>
+                                            <th>CPMK</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <% cpmk.forEach(function(cp, index) { %>
+                                            <tr>
+                                                <td>
+                                                    <%= cp.code %>
+                                                </td>
+                                                <td>
+                                                    <%= cp.name %>
+                                                </td>
+                                            </tr>
+                                            <% }) %>
+                                    </tbody>
+                                </table>
+                                <br />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>

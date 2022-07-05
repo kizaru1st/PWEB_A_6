@@ -1,104 +1,88 @@
-<%- include('../partials/header.ejs') %> 
-    <div id="app">
+<%- include('../partials/header.ejs') %>
+  <div id="app">
 
-        <%- include('../partials/sidebar.ejs') %> 
+    <%- include('../partials/sidebar.ejs') %>
+      <%- include('../partials/navbar.ejs') %>
 
         <div id="main">
-            <header class="mb-3">
-                <a href="#" class="burger-btn d-block d-xl-none">
-                    <i class="bi bi-justify fs-3"></i>
-                </a>
-            </header>
-            <div class="page-heading">
-                <h3>Dosen</h3>
-            </div>
-            <!-- ----------------- -->
-            <!-- EDIT DI BAWAH INI -->
-            <!-- ----------------- -->
-            <section id="basic-horizontal-layouts">
-                <div class="row match-height">
-                  <div class="col-md-12 col-12">
-                    <div class="card">
-                      <div class="card-content">
-                        <div class="card-body">
-                          <form class="form form-horizontal">
-                            <div class="form-body">
-                              <div class="row">
-                                <div class="col-md-8">
-                                  <h1>Hallo Dilaaa</h1>
-                                </div>
-                              </div>
-                            </div>
-                          </form>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+          <header class="mb-3">
+            <a href="#" class="burger-btn d-block d-xl-none">
+              <i class="bi bi-justify fs-3"></i>
+            </a>
+          </header>
+          <div class="page-heading">
+            <h3>Halaman RPS</h3>
+          </div>
+          <!-- ----------------- -->
+          <!-- EDIT DI BAWAH INI -->
+          <!-- ----------------- -->
+
+            <section class="section">
+              <div class="card">
+                <div class="card-body">
+                  <table class="table table-striped" id="table1">
+                    <thead>
+                      <tr>
+                        <th>No</th>
+                        <th>Kode Mata Kuliah</th>
+                        <th>Mata Kuliah</th>
+                        <th>SKS</th>
+                        <th>Semester</th>
+                        <th>Aksi</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <% matkul.forEach(function(matkul, index) { %>
+                        <tr>
+                          <td>
+                            <%= index+=1 %>
+                          </td>
+                          <td>
+                            <%= matkul.code %>
+                          </td>
+                          <td>
+                            <%= matkul.name %>
+                          </td>
+                          <td>
+                            <%= matkul.credit %>
+                          </td>
+                          <!-- <td><%= matkul.rev %></td> -->
+                          <td>
+                            <%= matkul.semester %>
+                          </td>
+
+
+                          <td>
+                            <a href="/admin/menentukandosen/<%= matkul.id %>">
+                              <i class="bi bi-plus"></i>
+                            </a>
+                            <!-- <a href="/dosen/revisirps/<%= matkul.id %>">
+                              <i class="bi bi-bandaid"></i>
+                            </a>
+                            <a href="/dosen/ubahrps/<%= matkul.id %>">
+                              <i class="bi bi-pencil"></i>
+                            </a> -->
+                          </td>
+                        </tr>
+                        <% }) %>
+                    </tbody>
+                  </table>
                 </div>
-              </section>
-      
-              <div class="page-heading">
-                <div class="page-title">
-                  <div class="row">
-                    <div class="col-12 col-md-6 order-md-1 order-last"></div>
-                    <div class="col-12 col-md-6 order-md-2 order-first"></div>
-                  </div>
-                </div>
-      
-                <section class="section">
-                  <div class="card">
-                    <div class="card-body">
-                      <table class="table table-striped" id="table1">
-                        <thead>
-                          <tr>
-                            <th>No</th>
-                            <th>NIP</th>
-                            <th>Nama Dosen</th>
-                            <th>No.Hp</th>
-                            <th>Status</th>
-                            <th>Aksi</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>1</td>
-                            <td>00000000000</td>
-                            <td>Husnil Kamil</td>
-                            <td>08232697xxxx</td>
-                            <td>Aktif</td>
-                            <td>
-                              <a href="admin-info-dosen.html" class="bi bi-info"></a>
-                              <a class="bi bi-archive"></a>
-                              <a href="admin-edit-dosen.html" class="bi bi-pencil"></a>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>2</td>
-                            <td>00000000000</td>
-                            <td>Ricky Akbar</td>
-                            <td>08136330xxxx</td>
-                            <td>Aktif</td>
-                            <td>
-                              <a href="admin-info-dosen.html" class="bi bi-info"></a>
-                              <a class="bi bi-archive"></a>
-                              <a href="admin-edit-dosen.html" class="bi bi-pencil"></a>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                  <a href="Admin-TambahDosen.html" class="btn btn-success">Tambah Dosen</a>
-                </section>
+              </div>
+            </section>
+            <a href="/admin/tambahmatkul" class="btn btn-outline-primary block">
+              Tambah RPS
+            </a>
+
 
 
             <!-- ---------- -->
             <!-- BATAS EDIT -->
             <!-- ---------- -->
-            <%- include('../partials/footer.ejs') %> 
+            <%- include('../partials/footer.ejs') %>
+          </div>
         </div>
-    </div>
-<%- include('../partials/js.ejs') %> 
-</body>
+        <%- include('../partials/js.ejs') %>
+          </body>
 
-</html>
+          </html>

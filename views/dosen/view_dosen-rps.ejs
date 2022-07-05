@@ -2,209 +2,68 @@
   <div id="app">
 
     <%- include('../partials/sidebar.ejs') %>
+      <%- include('../partials/navbar.ejs') %>
 
-      <div id="main">
-        <header class="mb-3">
-          <a href="#" class="burger-btn d-block d-xl-none">
-            <i class="bi bi-justify fs-3"></i>
-          </a>
-        </header>
-        <div class="page-heading">
-          <h3>RPS</h3>
-        </div>
-        <!-- ----------------- -->
-        <!-- EDIT DI BAWAH INI -->
-        <!-- ----------------- -->
-        <section id="basic-horizontal-layouts">
-          <div class="row match-height">
-            <div class="col-md-12 col-12">
-              <div class="card">
-                <div class="card-content">
-                  <div class="card-body">
-                    <form class="form form-horizontal">
-                      <div class="form-body">
-                        <div class="row">
-                          <div class="col-md-4">
-                            <label>Nama Mata Kuliah</label>
-                          </div>
-                          <div class="col-md-8 form-group">
-                            <label>Penjaskes</label>
-                          </div>
-                          <div class="col-md-4">
-                            <label>Kode Mata Kuliah</label>
-                          </div>
-                          <div class="col-md-8 form-group">
-                            <label>PJ001</label>
-                          </div>
-                          <div class="col-md-4">
-                            <label>SKS</label>
-                          </div>
-                          <div class="col-md-8 form-group">
-                            <label>5</label>
-                          </div>
-                          <div class="col-md-4">
-                            <label>Semester</label>
-                          </div>
-                          <div class="col-md-8 form-group">
-                            <label>5</label>
-                          </div>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <div id="main">
+          <header class="mb-3">
+            <a href="#" class="burger-btn d-block d-xl-none">
+              <i class="bi bi-justify fs-3"></i>
+            </a>
+          </header>
+          <div class="page-heading">
+            <h3>RPS</h3>
           </div>
-          <section class="section">
-            <div class="row" id="basic-table">
-              <div class="col-12 col-md-12">
-                <div class="card">
-                  <div class="card-header">
-                    <h6 class="card-title">Pertemuan</h6>
-                  </div>
-                  <div class="col-12 d-flex justify-content-end">
-
-                    <a class="mx-2 btn btn-outline-primary block" href="/dosen/dosen-tambah-pertemuan">
-                      Tambah Pertemuan
-                    </a>
-
-                  </div>
-
-                  <div class="card-content">
-                    <div class="card-body">
-                      <!-- Table with outer spacing -->
-                      <div class="table-responsive">
-                        <table class="table table-lg">
-                          <thead>
-                            <tr>
-                              <th>No</th>
-                              <th>Nama Mata Kuliah</th>
-                              <th>Kode Mata Kuliah</th>
-                              <th>SKS</th>
-                              <th>Semester</th>
-                              <th>Topik Pembahasan</th>
-                              <th>Aksi</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td class="text-bold-500">1</td>
-                              <td class="text-bold-500">Data Mining</td>
-                              <td class="text-bold-500">JS001</td>
-                              <td class="text-bold-500">3</td>
-                              <td class="text-bold-500">4</td>
-                              <td class="text-bold-500">K-Means</td>
-                              <td>
-                                <i class="bi bi-archive"></i>
-                                <a href="/dosen/dosen-edit-pertemuan">
-                                  <i class="bi bi-pencil"></i>
-                                </a>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-          </section>
-          <section id="basic-vertical-layouts">
-            <div class="row match-height">
-              <div class="col-md-12 col-12">
-                <div class="card">
-                  <div class="card-header">
-                    <h6 class="card-title">Reference</h6>
-                  </div>
-                  <div class="col-12 d-flex justify-content-end">
-
-                    <a href="/dosen/dosen-tambah-referensi" class="mx-2 btn btn-outline-primary block">
-                      Tambah Referensi
-                    </a>
-                    <!-- <a href="dosen-edit-referensi.html" type="button" class="btn btn-success">Edit<a>
-                            <a href="#" type="button" class="btn btn-success">Hapus<a> -->
-
-
-                  </div>
-                  <div class="card-content">
-                    <div class="card-body">
-                      <!-- Table with outer spacing -->
-                      <div class="table-responsive">
-                        <table class="table table-lg">
-                          <thead>
-                            <tr>
-                              <th>No</th>
-                              <th>Title</th>
-                              <th>Penulis</th>
-                              <th>Penerbit</th>
-                              <th>Tahun</th>
-                              <th>Aksi</th>
-
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td class="text-bold-500">1</td>
-                              <td class="text-bold-500">Lorem, ipsum dolor.</td>
-                              <td class="text-bold-500">Lorem, ipsum dolor.</td>
-                              <td class="text-bold-500">Lorem ipsum dolor sit amet.</td>
-                              <td class="text-bold-500">Lorem ipsum dolor sit amet.</td>
-                              </td>
-
-                              <td>
-                                <a href="/dosen/dosen-info-referensi" class="bi bi-info"></a>
-
-                              </td>
-
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-          </section>
-
+          <!-- ----------------- -->
+          <!-- EDIT DI BAWAH INI -->
+          <!-- ----------------- -->
           <section id="basic-horizontal-layouts">
             <div class="row match-height">
               <div class="col-md-12 col-12">
                 <div class="card">
-                  <div class="card-header">
-                    <h6 class="card-title">CPMK</h6>
-                  </div>
-                  <div class="col-12 d-flex justify-content-end">
-                    <a href="/dosen/dosen-tambah-cpmk" class="mx-2 btn btn-outline-primary block">Tambah CPMK<a>
-                  </div>
                   <div class="card-content">
                     <div class="card-body">
                       <form class="form form-horizontal">
                         <div class="form-body">
                           <div class="row">
-                            <div class="col-md-1">
-                              <label>1.</label>
+                            <div class="col-md-4">
+                              <label>Nama Mata Kuliah</label>
                             </div>
-                            <div class="col-md-11 form-group">
-                              <label>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, molestias.</label>
+                            <div class="col-md-8 form-group">
+                              <label>
+                                <%= rps.name %>
+                              </label>
                             </div>
-                            <div class="col-md-1">
-                              <label>2.</label>
+                            <div class="col-md-4">
+                              <label>Kode Mata Kuliah</label>
                             </div>
-                            <div class="col-md-11 form-group">
-                              <label>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, quod.</label>
+                            <div class="col-md-8 form-group">
+                              <label>
+                                <%= rps.code %>
+                              </label>
                             </div>
-                            <div class="col-md-1">
-                              <label>3.</label>
+                            <div class="col-md-4">
+                              <label>SKS</label>
                             </div>
-                            <div class="col-md-11 form-group">
-                              <label>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, quod.</label>
+                            <div class="col-md-8 form-group">
+                              <label>
+                                <%= rps.credit %>
+                              </label>
                             </div>
-                            <div class="col-md-1">
-                              <label>4.</label>
+                            <div class="col-md-4">
+                              <label>Semester</label>
                             </div>
-                            <div class="col-md-11 form-group">
-                              <label>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, quod.</label>
+                            <div class="col-md-8 form-group">
+                              <label>
+                                <%= rps.semester %>
+                              </label>
+                            </div>
+                            <div class="col-md-4">
+                              <label>Deskripsi</label>
+                            </div>
+                            <div class="col-md-8 form-group">
+                              <label>
+                                <%= rps.description %>
+                              </label>
                             </div>
                           </div>
                         </div>
@@ -214,68 +73,37 @@
                 </div>
               </div>
             </div>
-          </section>
-          <section id="basic-vertical-layouts">
-            <div class="row match-height">
-              <div class="col-md-12 col-12">
-                <div class="card">
-                  <div class="card-header">
-                    <h6 class="card-title">Komponen Penilaian</h6>
-                  </div>
-                  <div class="col-12 d-flex justify-content-end">
-                    <!-- <a href="dosen-tambah-komponen.html" type="button" class="btn btn-success">Tambah<a>
-                        <a href="dosen-edit-komponen.html" type="button" class="btn btn-success">Edit<a>
-                            <a href="#" type="button" class="btn btn-success">Hapus<a> -->
 
-                  </div>
+            <section class="section">
+                <%- include('./modals/pertemuan.ejs') %> 
+            </section>
 
-                  <div class="card-content">
-                    <div class="card-body">
-                      <!-- Table with outer spacing -->
-                      <div class="table-responsive">
-                        <table class="table table-lg">
-                          <thead>
-                            <tr>
-                              <th>No</th>
-                              <th>Kode Mata Kuliah</th>
-                              <th>Mata Kuliah</th>
-                              <th>SKS</th>
-                              <th>Semester</th>
-                              <th>Aksi</th>
+            <!-- Reference -->
+            <section id="basic-vertical-layouts">
+              <%- include('./modals/referensi.ejs') %> 
+            </section>
 
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td class="text-bold-500">1</td>
-                              <td class="text-bold-500">JSI 001</td>
-                              <td class="text-bold-500">Data Mining</td>
-                              <td class="text-bold-500">3</td>
-                              <td class="text-bold-500">4</td>
-                              <td>
-                                <a href="dosen-info-komponen.html" class="bi bi-info"></a>
+            <!-- CPMK -->
+            <section id="basic-horizontal-layouts">
+              <%- include('./modals/cpmk.ejs') %> 
+            </section>
 
-                              </td>
+            <section id="basic-vertical-layouts">
+              <%- include('./modals/penilaian.ejs') %> 
+            </section>
 
-                            </tr>
-
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                  </div>
-                </div>
           </section>
 
-        </section>
 
-
-        <!-- ---------- -->
-        <!-- BATAS EDIT -->
-        <!-- ---------- -->
-        <%- include('../partials/footer.ejs') %>
-      </div>
+          <!-- ---------- -->
+          <!-- BATAS EDIT -->
+          <!-- ---------- -->
+          <%- include('../partials/footer.ejs') %>
+        </div>
   </div>
+  <!-- ===== -->
+
+
   <%- include('../partials/js.ejs') %>
     </body>
 

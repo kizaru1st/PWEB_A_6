@@ -2,6 +2,7 @@
     <div id="app">
 
         <%- include('../partials/sidebar.ejs') %> 
+        <%- include('../partials/navbar.ejs') %> 
 
         <div id="main">
             <header class="mb-3">
@@ -15,27 +16,7 @@
             <!-- ----------------- -->
             <!-- EDIT DI BAWAH INI -->
             <!-- ----------------- -->
-            <section id="basic-horizontal-layouts">
-                <div class="row match-height">
-                  <div class="col-md-12 col-12">
-                    <div class="card">
-                      <div class="card-content">
-                        <div class="card-body">
-                          <form class="form form-horizontal">
-                            <div class="form-body">
-                              <div class="row">
-                                <div class="col-md-8">
-                                  <h1>Hallo Dilaaa</h1>
-                                </div>
-                              </div>
-                            </div>
-                          </form>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section>
+
       
               <div class="page-heading">
                 <div class="page-title">
@@ -60,91 +41,27 @@
                           </tr>
                         </thead>
                         <tbody>
+                          <% rpsmhs.forEach(function(matkul, index) { %>
                           <tr>
-                            <td>1</td>
-                            <td>JSI001</td>
-                            <td>Data Mining</td>
-                            <td>3</td>
-                            <td>4</td>
+                            <td><%= index+1 %></td>
+                            <td><%= matkul.code %></td>
+                            <td><%= matkul.name %></td>
+                            <td><%= matkul.credit %></td>
+                            <td><%= matkul.semester %></td>
                             <td>
-                              <a href="mahasiswa-info-rps.html" class="bi bi-info"></a>
+                              <a href="/mahasiswa/detailrps/<%= matkul.id %> " class="bi bi-info"></a>
+                            </td>
+                            <td>
+                              <a href="/mahasiswa/print/<%= matkul.id %> " class="bi bi-printer"></a>
                             </td>
                           </tr>
-                          <tr>
-                            <td>2</td>
-                            <td>JSI002</td>
-                            <td>Berhitung</td>
-                            <td>5</td>
-                            <td>4</td>
-                            <td>
-                              <a href="mahasiswa-info-rps.html" class="bi bi-info"></a>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>1</td>
-                            <td>JSI001</td>
-                            <td>Data Mining</td>
-                            <td>3</td>
-                            <td>4</td>
-                            <td>
-                              <a href="mahasiswa-info-rps.html" class="bi bi-info"></a>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>2</td>
-                            <td>JSI002</td>
-                            <td>Berhitung</td>
-                            <td>5</td>
-                            <td>4</td>
-                            <td>
-                              <a href="mahasiswa-info-rps.html" class="bi bi-info"></a>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>1</td>
-                            <td>JSI001</td>
-                            <td>Data Mining</td>
-                            <td>3</td>
-                            <td>4</td>
-                            <td>
-                              <a href="mahasiswa-info-rps.html" class="bi bi-info"></a>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>2</td>
-                            <td>JSI002</td>
-                            <td>Berhitung</td>
-                            <td>5</td>
-                            <td>4</td>
-                            <td>
-                              <a href="mahasiswa-info-rps.html" class="bi bi-info"></a>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>1</td>
-                            <td>JSI001</td>
-                            <td>Data Mining</td>
-                            <td>3</td>
-                            <td>4</td>
-                            <td>
-                              <a href="mahasiswa-info-rps.html" class="bi bi-info"></a>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>2</td>
-                            <td>JSI002</td>
-                            <td>Berhitung</td>
-                            <td>5</td>
-                            <td>4</td>
-                            <td>
-                              <a href="mahasiswa-info-rps.html" class="bi bi-info"></a>
-                            </td>
-                          </tr>
+                          <% }) %>
                         </tbody>
                       </table>
                     </div>
                   </div>
                 </section>
+                
 
 
             <!-- ---------- -->

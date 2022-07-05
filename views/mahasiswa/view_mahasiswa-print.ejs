@@ -1,0 +1,126 @@
+<%- include('../partials/header.ejs') %>
+  <div id="app">
+          <header class="mb-3">
+            <a href="#" class="burger-btn d-block d-xl-none">
+              <i class="bi bi-justify fs-3"></i>
+            </a>
+          </header>
+          <div class="page-heading">
+            <h3>RPS</h3>
+          </div>
+          <!-- ----------------- -->
+          <!-- EDIT DI BAWAH INI -->
+          <!-- ----------------- -->
+
+          <section id="basic-horizontal-layouts">
+            <div class="row match-height">
+              <div class="col-md-12 col-12">
+                <div class="card">
+                  <div class="card-content">
+                    <div class="card-body">
+                      <form class="form form-horizontal">
+                        <div class="form-body">
+                          <div class="row">
+                            <div class="col-md-4">
+                              <label>Nama Mata Kuliah</label>
+                            </div>
+                            <div class="col-md-8 form-group">
+                              <label>
+                                <%= rps.name %>
+                              </label>
+                            </div>
+                            <div class="col-md-4">
+                              <label>Kode Mata Kuliah</label>
+                            </div>
+                            <div class="col-md-8 form-group">
+                              <label>
+                                <%= rps.code %>
+                              </label>
+                            </div>
+                            <div class="col-md-4">
+                              <label>SKS</label>
+                            </div>
+                            <div class="col-md-8 form-group">
+                              <label>
+                                <%= rps.credit %>
+                              </label>
+                            </div>
+                            <div class="col-md-4">
+                              <label>Semester</label>
+                            </div>
+                            <div class="col-md-8 form-group">
+                              <label>
+                                <%= rps.semester %>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <section id="basic-vertical-layouts">
+              <div class="row match-height">
+                <div class="col-md-12 col-12">
+                  <div class="card">
+                    <div class="card-header">
+                      <h6 class="card-title">Deskripsi</h6>
+                    </div>
+                    <div class="card-content">
+                      <div class="card-body">
+                        <div class="form-body">
+                          <div class="row">
+                            <div class="col-12">
+                              <div class="form-group">
+                                <div class="form-group mb-3">
+                                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                    disabled><%= rps.description %> </textarea>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Pertemuan -->
+            <section class="section">
+              <%- include('./table/pertemuan.ejs') %> 
+            </section>
+
+            <section id="basic-vertical-layouts">
+              <%- include('./table/referensi.ejs') %> 
+            </section>
+
+            <section id="basic-vertical-layouts">
+              <%- include('./table/cp.ejs') %>
+            </section>
+
+            <section id="basic-vertical-layouts">
+              <%- include('./table/cpmk.ejs') %> 
+            </section>
+
+            <section id="basic-vertical-layouts">
+              <%- include('./table/penilaian.ejs') %> 
+            </section>
+
+          </section>
+
+
+
+          <!-- ---------- -->
+          <!-- BATAS EDIT -->
+          <!-- ---------- -->
+        </div>
+  <script>
+    window.print();
+  </script>
+    </body>
+
+    </html>

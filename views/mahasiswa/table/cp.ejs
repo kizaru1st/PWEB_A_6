@@ -1,0 +1,39 @@
+<div class="row match-height">
+    <div class="col-md-12 col-12">
+      <div class="card">
+        <div class="card-header">
+          <h6 class="card-title">CP</h6>
+        </div>
+
+        <div class="card-content">
+          <div class="card-body">
+            <!-- Table with outer spacing -->
+            <div class="table-responsive">
+              <table class="table table-lg">
+                <thead>
+                  <tr>
+                    <th>No</th>
+                    <th>Code</th>
+                    <th>Name</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <% cp.forEach(function(capaian, index) { %>
+                    <tr>
+                      <td class="text-bold-500">
+                        <%= index+=1 %>
+                      </td>
+                      <td class="text-bold-500">
+                        <%= capaian.code %>
+                      </td>
+                      <td class="text-bold-500">
+                        <%= capaian.name %>
+                      </td>
+                    </tr>
+                    <% }) %>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>

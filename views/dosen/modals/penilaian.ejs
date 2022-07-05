@@ -1,0 +1,208 @@
+<section id="basic-horizontal-layouts">
+    <div class="row match-height">
+        <div class="col-md-12 col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h6 class="card-title">Penilaian</h6>
+                </div>
+                <div class="col-md-3 ps-3">
+                    <button type="button" class="btn btn-primary rounded-pill" data-bs-toggle="modal"
+                        data-bs-target="#FormTambahpenilaian">+ Tambah</button>
+                </div>
+                <div class="card-content">
+                    <div class="card-body">
+                        <div class="form-body">
+                            <div class="row">
+                                <!-- table hover -->
+                                <table class="table table-hover mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Penilaian</th>
+                                            <th>Bobot (%)</th>
+                                            <th>Aksi</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <% penilaian.forEach(function(pnln, index) { %>
+                                            <tr>
+                                                <td class="text-bold-500">
+                                                    <%= index+1 %>
+                                                </td>
+                                                <td>
+                                                    <%= pnln.name %>
+                                                </td>
+                                                <td>
+                                                    <%= pnln.percentage %>
+                                                </td>
+                                                <td>
+                                                    <button class="btn"><i class="fas fa-edit" data-bs-toggle="modal"
+                                                            data-bs-target="#editpenilaian<%= index+1 %>"></i></button>
+
+                                                    <!--edit form Modal -->
+                                                    <div class="modal fade text-left" id="editpenilaian<%= index+1 %>"
+                                                        tabindex="-1" role="dialog" aria-labelledby="myModalLabel33"
+                                                        aria-hidden="true">
+                                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                                                            role="document">
+                                                            <div class="modal-content">
+                                                                <form action="/dosen/ubahkomponen" method="post">
+                                                                    <div class="modal-header">
+                                                                        <h4 class="modal-title" id="myModalLabel33">Edit
+                                                                            Komponen Penilaian</h4>
+                                                                        <button type="button" class="close"
+                                                                            data-bs-dismiss="modal" aria-label="Close">
+                                                                            <i data-feather="x"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        <input type="hidden" name="id"
+                                                                            value="<%= pnln.id %>">
+                                                                        <input type="hidden" name="course_plan_id"
+                                                                            value="<%= rps.id %>">
+                                                                        <input type="hidden" name="persentaseLama"
+                                                                            value="<%= pnln.percentage %>">
+                                                                        <label>Komponen Penilaian</label>
+                                                                        <div class="form-group">
+                                                                            <input type="text" class="form-control"
+                                                                                disabled value="<%= pnln.name %>">
+                                                                        </div>
+                                                                        <label>Bobot (%)</label>
+                                                                        <div class="form-group">
+                                                                            <input type="number"
+                                                                                placeholder="Masukkan bobot"
+                                                                                class="form-control" min="1" max="100"
+                                                                                name="percentage"
+                                                                                value="<%= pnln.percentage %>" />
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button"
+                                                                            class="btn btn-light-secondary"
+                                                                            data-bs-dismiss="modal">
+                                                                            <i class="bx bx-x d-block d-sm-none"></i>
+                                                                            <span class="d-none d-sm-block">Close</span>
+                                                                        </button>
+                                                                        <button type="submit"
+                                                                            class="btn btn-primary ml-1">
+                                                                            <i
+                                                                                class="bx bx-check d-block d-sm-none"></i>
+                                                                            <span class="d-none d-sm-block">Edit</span>
+                                                                        </button>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <button class="btn"><i class="fas fa-trash" data-bs-toggle="modal"
+                                                            data-bs-target="#hapusPenilaian<%= index+1 %>"></i></button>
+
+                                                    <!--Danger theme Modal -->
+                                                    <div class="modal fade text-left" id="hapusPenilaian<%= index+1 %>"
+                                                        tabindex="-1" role="dialog" aria-labelledby="myModalLabel120"
+                                                        aria-hidden="true">
+                                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                                                            role="document">
+                                                            <div class="modal-content">
+                                                                <form action="/dosen/hapuskomponen-<%= pnln.id %>"
+                                                                    method="get">
+                                                                    <div class="modal-header bg-danger">
+                                                                        <h5 class="modal-title white"
+                                                                            id="myModalLabel120">Peringatan</h5>
+                                                                        <button type="button" class="close"
+                                                                            data-bs-dismiss="modal" aria-label="Close">
+                                                                            <i data-feather="x"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                    <div class="modal-body">Yakin Ingin menghapus?</div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button"
+                                                                            class="btn btn-light-secondary"
+                                                                            data-bs-dismiss="modal">
+                                                                            <i class="bx bx-x d-block d-sm-none"></i>
+                                                                            <span class="d-none d-sm-block">Batal</span>
+                                                                        </button>
+                                                                        <button type="submit"
+                                                                            class="btn btn-danger ml-1">
+                                                                            <i
+                                                                                class="bx bx-check d-block d-sm-none"></i>
+                                                                            <span class="d-none d-sm-block">Hapus</span>
+                                                                        </button>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <% }) %>
+                                    </tbody>
+                                </table>
+                                <br />
+
+                                <span>
+                                    <!-- Button trigger for tambah form modal -->
+
+
+                                    <!--tambah form Modal -->
+                                    <div class="modal fade text-left" id="FormTambahpenilaian" tabindex="-1"
+                                        role="dialog" aria-labelledby="myModalLabel33" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                                            role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h4 class="modal-title" id="myModalLabel33">Tambah Komponen
+                                                        Penilaian</h4>
+                                                    <button type="button" class="close" data-bs-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <i data-feather="x"></i>
+                                                    </button>
+                                                </div>
+                                                <form action="/dosen/tambahkomponen" method="post">
+                                                    <div class="modal-body">
+                                                        <input type="hidden" name="course_plan_id"
+                                                            value="<%= rps.id %>" />
+                                                        <label>Komponen Penilaian</label>
+                                                        <div class="form-group">
+                                                            <select class="form-select" id="basicSelect"
+                                                                placeholder="Masukkan komponen penilaian" name="name"
+                                                                required>
+                                                                <option>Project</option>
+                                                                <option>Tugas</option>
+                                                                <option>Quiz</option>
+                                                                <option>UTS</option>
+                                                                <option>UAS</option>
+                                                            </select>
+                                                        </div>
+                                                        <label>Bobot (%)</label>
+                                                        <div class="form-group">
+                                                            <input type="number" placeholder="Masukkan bobot"
+                                                                class="form-control" min="1" max="100" name="percentage"
+                                                                required />
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-light-secondary"
+                                                            data-bs-dismiss="modal">
+                                                            <i class="bx bx-x d-block d-sm-none"></i>
+                                                            <span class="d-none d-sm-block">Tutup</span>
+                                                        </button>
+                                                        <button type="submit" class="btn btn-primary ml-1">
+                                                            <i class="bx bx-check d-block d-sm-none"></i>
+                                                            <span class="d-none d-sm-block">Tambah</span>
+                                                        </button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

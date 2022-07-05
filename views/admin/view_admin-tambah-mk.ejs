@@ -1,0 +1,83 @@
+<%- include('../partials/header.ejs') %> 
+    <div id="app">
+
+        <%- include('../partials/sidebar.ejs') %> 
+        <%- include('../partials/navbar.ejs') %> 
+
+        <div id="main">
+            <header class="mb-3">
+                <a href="#" class="burger-btn d-block d-xl-none">
+                    <i class="bi bi-justify fs-3"></i>
+                </a>
+            </header>
+            <div class="page-heading">
+                <h3>RPS</h3>
+            </div>
+            <!-- ----------------- -->
+            <!-- EDIT DI BAWAH INI -->
+            <!-- ----------------- -->
+            <section id="basic-vertical-layouts">
+                <div class="row match-height">
+                  <div class="col-md-12 col-12">
+                    <div class="card">
+                      <div class="card-content">
+                        <div class="card-body">
+                          <form class="form form-vertical" method="POST" action="/admin/add">
+                            <div class="form-body">
+                              <div class="row">
+                                <div class="col-12">
+                                  <div class="form-group">
+                                    <label for="first-name-vertical">Kode Mata Kuliah</label>
+                                    <input name="code" type="text" id="first-name-vertical" class="form-control" />
+                                  </div>
+                                </div>
+                                <div class="col-12">
+                                  <div class="form-group">
+                                    <label for="first-name-vertical">Nama Mata Kuliah</label>
+                                    <input name="name" type="text" id="first-name-vertical" class="form-control" />
+                                  </div>
+                                </div>
+                                <div class="col-12">
+                                  <div class="form-group">
+                                    <label for="contact-info-vertical">Semester</label>
+                                    <input name="semester" type="number" id="contact-info-vertical" class="form-control" />
+                                  </div>
+                                </div>
+                                <div class="col-12">
+                                  <div class="form-group">
+                                    <label for="first-name-vertical">SKS</label>
+                                    <input name="credit" type="text" id="first-name-vertical" class="form-control" />
+                                  </div>
+                                </div>
+                                <div class="col-12">
+                                  <div class="form-group">
+                                    <label for="first-name-vertical">Deskripsi</label>
+                                    <div class="form-group mb-3">
+                                      <textarea name="description" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-12 d-flex justify-content-end">
+                                  <button class="btn btn-success">Tambah RPS</button>
+                                </div>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+
+            <!-- ---------- -->
+            <!-- BATAS EDIT -->
+            <!-- ---------- -->
+            <%- include('../partials/footer.ejs') %> 
+        </div>
+    </div>
+<%- include('../partials/js.ejs') %> 
+</body>
+
+</html>

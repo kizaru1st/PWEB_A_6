@@ -1,26 +1,17 @@
 {
-  "name": "loki-a6",
-  "version": "0.0.0",
-  "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "nodemon server"
   },
   "dependencies": {
-    "cookie-parser": "~1.4.4",
-    "cors": "^2.8.5",
-    "debug": "~2.6.9",
-    "dotenv": "^16.0.1",
-    "ejs": "~2.6.1",
-    "express": "~4.16.1",
-    "express-ejs-layouts": "^2.5.1",
-    "http-errors": "~1.6.3",
-    "module-alias": "^2.2.2",
-    "morgan": "~1.9.1",
-    "mysql2": "^2.3.3"
-  },
-  "devDependencies": {
-    "cli": "^1.0.1",
-    "sequelize": "^6.21.0",
-    "sequelize-cli": "^6.4.1"
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.0",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.0",
+    "ejs": "^3.1.8",
+    "express": "^4.17.3",
+    "jsonwebtoken": "^8.5.1",
+    "mysql2": "^2.3.3",
+    "pdf-to-printer": "^5.3.0",
+    "sequelize": "^6.17.0"
   }
 }
